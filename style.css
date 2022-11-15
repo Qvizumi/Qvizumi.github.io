@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+body {
+  font-family: 'Noto Serif', serif;
+  background: rgba(0, 0, 0, .6);
+  color: #fff;
+}
+
+[data-score-container] {
+  display: none;
+}
+
+.info {
+  text-align: center;
+}
+
+#greenRetake {
+  border: 1px solid lightgreen;
+  border-radius: 25px;
+  margin: 1.5rem 0;
+  padding: .75rem 2rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  box-shadow: 0 0 10px 0 #444;
+  color: #fff;
+  background: mediumseagreen;
+}
+
+.score{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.score > i {
+  margin: 0 .25rem;
+  font-size: 1.5rem;
+}
+
+.result-container {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: .85rem;
+}
+
+.result-section > .circle {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border: 3px solid deepskyblue;
+  border-radius: 50%;
+}
+
+.circle.netSpeed {
+  border-color: mediumspringgreen;
+}
+
+.circle > div:first-child {
+  margin-bottom: .5rem;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.label {
+  text-align: center;
+}
+
+.infoArea {
+  color: dodgerblue;
+  display: flex;
+  justify-content: space-between;
+  margin: .25rem 0;
+}
+
+.testContainer {
+  position: relative;
+  background: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, .6);
+  overflow: hidden;
+  text-align: justify;
+  margin: 2rem 0 0 0;
+  padding: 0 1rem .5rem;
+  border: 1px solid rgba(255, 255, 255, .5);
+}
+
+.center-icon {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fa-rotate.rotating {
+  color: #fff;
+  font-size: 1.2rem;
+  animation: rotating 1s linear infinite;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotateZ(0deg)
+  }
+  to {
+    transform: rotateZ(360deg)
+  }
+}
+
+.retakeTest {
+  color: dodgerblue;
+  transition: all .25s ease;
+}
+
+.retakeTest:active {
+  color: white;
+}
+
+.userInput {
+  background: inherit;
+  color: #333;
+  width: 100%;
+  margin-top: .5rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #333;
+  font-size: 1.25rem;
+}
+
+.userInput:focus {
+  border-color: royalblue;
+  transition: all 1s ease;
+}
+

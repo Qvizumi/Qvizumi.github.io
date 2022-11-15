@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <script src="https://kit.fontawesome.com/79b5d4609f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div data-score-container>
+   <div class="info">
+     <button class="retake" id="greenRetake">Retake test</button>
+    <div class="score">
+     <i class="fa-solid fa-gauge-high"></i>
+     <div>Your Test Score</div>
+   </div>
+  </div>
+  <div class="result-container">
+    <div class="result-section">
+      <div class="circle">
+        <div class="totalCorrect">0</div>
+        <div class="description">WPM</div> 
+      </div>
+      <div class="label">Typing speed</div>
+    </div>
+    <div class="result-section">
+      <div class="circle">
+        <div class="totalTypos">0</div>
+        <div class="description">Typos</div> 
+      </div>
+      <div class="label">Accuracy</div>
+    </div>
+    <div class="result-section">
+      <div class="circle netSpeed">
+        <div class="netWpm">0</div>
+        <div class="description">WPM</div> 
+      </div>
+      <div class="label">Net Speed</div>
+    </div>
+  </div>
+ </div>
+ 
+  <div class="testContainer">
+    <div class="infoArea">
+      <div class="timer">01:00</div>
+      <div class="retakeTest" id="resetTimer">Reset timer</div>
+    </div>
+    <div class="wordsArea" data-wordarea>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod modi perspiciatis odit libero ut, incidunt, suscipit iste tempore ipsum magni consequuntur cum numquam, sunt amet quam, ex rem asperiores veniam!</div>
+    <div class="center-icon">
+      <i class="fa-solid fa-rotate"></i>
+    </div>
+    <input type="text" class="userInput">
+  </div>
+</body>
+</html>
